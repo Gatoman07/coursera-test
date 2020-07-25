@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fisica de Primaria</title>
+
+	<style>
+
+		p:hover{
+			color: purple;
+		}
+
+		img{
+			display: block;
+			margin: auto;
+		}
+		
+		h1{
+			color: black;
+			font-size: 30px;
+			font-style: italic;
+			text-transform: uppercase;
+		}
+
+		h2{
+			color: blue;
+		}
+
+		.titulo{
+			box-sizing: border-box;
+			background-color: red;
+		}
+
+		section{
+			margin-left: 50px;
+			text-align: justify;
+			font-size: 100%;
+		}
+
+		div.componente{
+			margin-left: 50px;
+		}
+
+		.componente:hover{
+			color: red;
+		}
+
+		li:hover{
+			color: orange;
+		}
+
+		div.formula:hover{
+			color: orange;
+		}
+
+		.formula{
+			margin: auto;
+			width: 300px;
+			text-transform: lowercase;
+			font-size: 120%;
+			background-color: green;
+			color: white;
+			text-align: center;
+			box-sizing: border-box;
+		}
+
+		#ref{
+			text-decoration: none;
+		}
+
+		#ref:link, #ref:visited{
+			color: blue;
+		}
+
+		#ref:active, #ref:hover{
+			color: black;
+			background-color: red;
+		}
+
+		div ol li{
+			margin-left: 520px;
+			list-style: none;
+		}
+
+		li{
+			text-align: center;
+		}
+
+		ul{
+			list-style: none;
+			text-decoration: none;
+		}
+
+		li a:link, li a:visited, #top{
+			font-size: 1.05em;
+			text-align: center;
+			width: 200px;
+			text-decoration: none;
+			background-color: purple;
+			border: 1px solid orange;
+			color: white;
+			display: block;
+			margin-bottom: 3px;
+		}
+
+		li a:hover, #top:hover{
+			background-color: orange;
+			color: black;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<!--Poner un menu-->
+	<div id="menu">
+		<ol>
+			<li><a href="#def">Definición</a></li>
+			<li><a href="#componentes">¿Como manejar estos problemas?</a></li>
+			<li><a href="#formulas">Ecuaciones</a></li>
+		</ol>
+	</div>
+
+	<div id="def" class="titulo" style="width: 455px;">
+		<h1>¿Que es un proyectil en 2D?</h1>
+	</div>
+	<section>
+		<p>
+			En un ataque de ira inducido por fructosa, decides lanzar por los aires un limón que sigue la curva punteada que mostramos en el siguiente diagrama. En este caso, consideramos que el limón es un proyectil bidimensional, pues está volando por el aire tanto vertical como horizontalmente, y se encuentra únicamente bajo la influencia de la gravedad. 
+		</p>
+		<p>
+			Como la fuerza gravitacional jala hacia abajo, la gravedad solo afectará la componente vertical de la velocidad del limón, Vy. La componente horizontal, Vx, no se verá afectada y se mantendrá constante a medida que el limón se mueva a lo largo de su trayectoria.
+		</p>
+		<p>
+			Intenta deslizar el punto en el diagrama mostrado a continuación para ver que la velocidad vertical Vy cambia, pero la velocidad horizontal Vx permanece constante.
+		</p>
+		<img src="fisica.png">
+	</section>
+
+	<div id="componentes" class="titulo" style="width: 1250px;">
+		<h1>¿Como manejamos matematicamente el movimiento de un proyectil en 2D?</h1>
+	</div>
+
+	<section>
+
+		<p>
+			Una de las formas más fáciles de lidiar con el movimiento de un proyectil en 2D es analizar el movimiento en cada dimensión de forma separada. En otras palabras, usaremos un conjunto de ecuaciones para describir el movimiento horizontal del limón y otro conjunto de ecuaciones para describir el movimiento vertical. Esto convierte un problema difícil en 2D en dos problemas más sencillos en 1D. Podemos hacer esto porque el cambio en la velocidad vertical del limón no afecta su velocidad horizontal. Del manera parecida, lanzar el limón con una velocidad horizontal grande no afecta su aceleración vertical. En otras palabras, si disparas una bala horizontalmente y dejas caer otra en el mismo instante, golpearán el suelo al mismo tiempo.
+		</p>
+
+		<p>
+			<h2 id="componenteH">Direccion Horizontal</h2>
+			<div class="componente">
+				No hay aceleración en la dirección horizontal, ya que la gravedad no jala el proyectil hacia los lados, solo hacia abajo. La resistencia del aire provocaría una aceleración horizontal, frenando el movimiento horizontal, pero como solo vamos a considerar casos donde la resistencia del aire es despreciable, podemos suponer que la velocidad horizontal es constante para un proyectil.
+			</div>
+			<div class="componente">
+				Así que para la dirección horizontal podemos usar la siguiente ecuación:
+				<div class="formula"><X<sub>f</sub> - X<sub>i</sub> = V<sub>ox</sub> t</div>
+			</div>
+		</p>
+
+		<p>
+			<h2 id="componenteV" >Direccion Vertical</h2>
+			<div class="componente">
+				Los proyectiles bidimensionales experimentan una aceleración constante hacia abajo debida a la gravedad de a<sub>y</sub>=-9,8m/s<sup>2</sup>. Como la aceleración vertical es constante, podemos resolver para una variable vertical utilizando alguna de las cuatro fórmulas cinemáticas que se muestran en la siguiente sección.
+			</div>
+		</p>
+	</section>
+
+	<div id="formulas" class="titulo" style="width: 410px;">
+		<h1>Ecuaciones Cinemáticas</h1>
+	</div>
+	<section>
+		<p>
+			Fórmulas para el movimiento en una componente dada <a style="font-style: italic;">f<a>
+		</p>
+		<ol class="formula">
+			<li>V<sub>f</sub> = V<sub>0f</sub> + a<sub>f</sub> t</li>
+			<li>F<sub>1</sub> - F<sub>0</sub> = t (V<sub>f</sub> - V<sub>0f</sub>) / 2</li>
+			<li>F<sub>1</sub> - F<sub>0</sub> = V<sub>0f</sub> t + 1/2 (a<sub>f</sub> t<sup>2</sup> )</li>
+			<li>V<sub>f</sub><sup>2</sup> = V<sub>0f</sub><sup>2</sup> + 2a<sub>f</sub> ( F<sub>1</sub> - F<sub>0</sub> )</li>
+		</ol>
+	</section>
+
+	<img src="fisica2.jpg">
+	<img src="fisica3.jpg">
+
+	<footer>
+		<a id="ref" href="https://es.khanacademy.org/science/fisica-pe-pre-u/x4594717deeb98bd3:movimiento-rectilineo-uniformemente-variado-mruv/x4594717deeb98bd3:movimiento-parabolico/a/what-is-2d-projectile-motion" target="_blank">Derechos de autor KhanAcademy</a>
+		<div><a id="top" href="#menu">Volver al inicio</a></div>
+	</footer>
+
+</body>
+</html>
