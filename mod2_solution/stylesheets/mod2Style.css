@@ -1,0 +1,91 @@
+/*Basic Style*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 10px;
+	font-family: Times-New-Roman, Helvetica, sans-serif;
+}
+
+header{
+	font-size: 175%;
+	text-align: center;
+}
+
+.dad{
+	padding: 10px;
+	float: none;
+	clear: both;
+	width: 100%;
+}
+
+.container{
+	border: 1px solid black;
+	background-color: #123A52;
+}
+
+
+div.container > div{
+	width: 100px;
+	border: 1px solid black;
+	font-size: 125%;
+	text-align: center;
+	color: white;
+	float: right;
+	/*Fixing the double border of the section an the section title*/
+	position: relative;
+	left: 1px;
+	bottom: 1px;
+}
+
+#nameAnimal1{
+	background-color: red;
+}
+
+#nameAnimal2{
+	color: black;
+	background-color: orange;
+}
+
+#nameAnimal3{
+	background-color: dodgerblue;
+}
+
+p{
+	padding: 10px;
+	color: white;
+	font-size: 100%;
+	clear: right;
+}
+
+/*Specific Style*/
+
+@media (max-width: 991px) and (min-width: 768px){
+
+	#dad1, #dad2{
+		clear: none;
+		padding: 10px;
+		float: left;
+		width: 50%;
+	}
+
+	#dad3{
+		float: none;
+		padding: 10px;
+		clear: both;
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 992px){
+
+	.dad{
+		clear: none;
+		padding: 10px;
+		float: left;
+		width: 33.333333%;
+	}	
+
+}
